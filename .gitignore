@@ -1,1 +1,14 @@
-service_account.json 
+# Чувствительные данные (лиды, emails)
+src/data/*.json
+leads*.csv
+csv_export.py
+# Ключи Google API
+service_account*
+*.json.json
+# venv + temp
+venv/
+__pycache__/
+*.pyc
+# OS
+.DS_Store
+Thumbs.db

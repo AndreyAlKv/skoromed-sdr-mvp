@@ -6,7 +6,7 @@ from email.mime.multipart import MIMEMultipart
 SMTP_CONFIG = {
     "host": "smtp.gmail.com",  # или smtp.yandex.ru:587
     "port": 587,
-    "user": "your@gmail.com",  # ЗАМЕНИ на свой email
+    "user": "gfdnk1971@gmail.com",  # ЗАМЕНИ на свой email
     "pass": "your_app_pass"    # App password (Gmail: настройки > безопасность)
 }
 def send_email(to_email, subject, body, from_email="info@skoromed.ai"):
