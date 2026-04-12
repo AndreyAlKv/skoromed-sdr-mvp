@@ -39,3 +39,13 @@ CTA: ответ/звонок +7(999)123-45-67
 if __name__ == "__main__":
     run_full_pipeline()
     print("\n🚀 SDR READY! Next: real OpenAI + SMTP mailer.py")
+print("🔄 Авто-синк лидов в Google Sheets...")
+try:
+    import subprocess
+    result = subprocess.run(["python", "src/sheets_sync.py"], capture_output=True, text=True, timeout=60)
+    if result.returncode == 0:
+        print("✅ Новые лиды в Google Sheets (precise-truck-493016-v6)!")
+    else:
+        print("⚠️ Sheets sync ошибка:", result.stderr[:200])
+except Exception as e:
+    print("⚠️ Sheets sync пропущен:", str(e))
