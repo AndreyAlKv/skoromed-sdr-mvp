@@ -1,0 +1,13 @@
+echo import os, sendgrid > mailer.py
+echo from sendgrid.helpers.mail import Mail >> mailer.py
+echo.>> mailer.py
+echo def send(to_email: str, subject: str, html: str):>> mailer.py
+echo     sg = sendgrid.SendGridAPIClient(api_key=os.getenv("SENDGRID_API_KEY"))>> mailer.py
+echo     mail = Mail(>> mailer.py
+echo         from_email=os.getenv("SENDGRID_FROM_EMAIL", "sandbox@example.com"),>> mailer.py
+echo         to_emails=to_email,>> mailer.py
+echo         subject=subject,>> mailer.py
+echo         html_content=html,>> mailer.py
+echo     )>> mailer.py
+echo     response = sg.send(mail)>> mailer.py
+echo     return response.status_code>> mailer.py

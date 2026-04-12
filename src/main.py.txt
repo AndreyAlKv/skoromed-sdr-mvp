@@ -1,0 +1,30 @@
+echo import os > main.py
+echo from scraper import scrape >> main.py
+echo from enrich import enrich >> main.py
+echo from llm_eval import evaluate >> main.py
+echo from sheets_sync import append_row >> main.py
+echo from mailer import send >> main.py
+echo from telegram_bot import notify >> main.py
+echo.>> main.py
+echo def run():>> main.py
+echo     records = scrape("B2B SaaS")>> main.py
+echo     for rec in records:>> main.py
+echo         enriched = enrich(rec)>> main.py
+echo         eval_res = evaluate(enriched)>> main.py
+echo         row = [>> main.py
+echo             enriched.get("name"),>> main.py
+echo             enriched.get("url"),>> main.py
+echo             enriched.get("address"),>> main.py
+echo             enriched.get("phone"),>> main.py
+echo             eval_res["score"],>> main.py
+echo         ]>> main.py
+echo         append_row(row, os.getenv("GOOGLE_SHEETS_ID"))>> main.py
+echo         send(>> main.py
+echo             to_email="test@example.com",>> main.py
+echo             subject=f"Новая компания – {enriched['name']}",>> main.py
+echo             html=f"<p>Score: {eval_res['score']:.2f}</p>",>> main.py
+echo         )>> main.py
+echo     notify("🚀 SDR‑pipeline завершён")>> main.py
+echo.>> main.py
+echo if __name__ == "__main__":>> main.py
+echo     run()>> main.py

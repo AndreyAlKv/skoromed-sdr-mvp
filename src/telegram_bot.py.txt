@@ -1,0 +1,8 @@
+echo import os, telegram > telegram_bot.py
+echo bot = telegram.Bot(token=os.getenv("TELEGRAM_BOT_TOKEN")) >> telegram_bot.py
+echo.>> telegram_bot.py
+echo def notify(text: str):>> telegram_bot.py
+echo     chat_id = os.getenv("TELEGRAM_CHAT_ID")>> telegram_bot.py
+echo     if not chat_id:>> telegram_bot.py
+echo         raise RuntimeError("TELEGRAM_CHAT_ID не задан")>> telegram_bot.py
+echo     bot.send_message(chat_id=chat_id, text=text) >> telegram_bot.py

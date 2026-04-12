@@ -1,0 +1,12 @@
+echo import os > sheets_sync_test.py
+echo from sheets_sync import append_row >> sheets_sync_test.py
+echo.>> sheets_sync_test.py
+echo def main():>> sheets_sync_test.py
+echo     sheet_id = os.getenv("GOOGLE_SHEETS_ID")>> sheets_sync_test.py
+echo     if not sheet_id:>> sheets_sync_test.py
+echo         raise RuntimeError("Переменная GOOGLE_SHEETS_ID не задана")>> sheets_sync_test.py
+echo     append_row(["Тест", "строка", 123], sheet_id)>> sheets_sync_test.py
+echo     print("1 rows appended.")>> sheets_sync_test.py
+echo.>> sheets_sync_test.py
+echo if __name__ == "__main__":>> sheets_sync_test.py
+echo     main()>> sheets_sync_test.py

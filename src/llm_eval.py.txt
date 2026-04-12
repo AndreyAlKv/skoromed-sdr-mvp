@@ -1,0 +1,14 @@
+echo import os, openai > llm_eval.py
+echo.>> llm_eval.py
+echo def evaluate(record: dict) -> dict:>> llm_eval.py
+echo     client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))>> llm_eval.py
+echo     prompt = f"Оцени ценность компании {record['name']} в B2B‑рынке от 0 до 1." >> llm_eval.py
+echo     resp = client.chat.completions.create(>> llm_eval.py
+echo         model="gpt-4o-mini",>> llm_eval.py
+echo         messages=[{"role": "user", "content": prompt}],>> llm_eval.py
+echo         temperature=0.0)>> llm_eval.py
+echo     try:>> llm_eval.py
+echo         score = float(resp.choices[0].message.content.strip())>> llm_eval.py
+echo     except Exception:>> llm_eval.py
+echo         score = 0.5>> llm_eval.py
+echo     return {"score": score}>> llm_eval.py

@@ -1,0 +1,15 @@
+echo from google.oauth2.service_account import Credentials > sheets_sync.py
+echo from googleapiclient.discovery import build >> sheets_sync.py
+echo.>> sheets_sync.py
+echo def _service():>> sheets_sync.py
+echo     creds = Credentials.from_service_account_file("service_account.json")>> sheets_sync.py
+echo     return build("sheets", "v4", credentials=creds)>> sheets_sync.py
+echo.>> sheets_sync.py
+echo def append_row(values, sheet_id):>> sheets_sync.py
+echo     service = _service()>> sheets_sync.py
+echo     body = {"values": [values]}>> sheets_sync.py
+echo     service.spreadsheets().values().append(>> sheets_sync.py
+echo         spreadsheetId=sheet_id,>> sheets_sync.py
+echo         range="A1",>> sheets_sync.py
+echo         valueInputOption="RAW",>> sheets_sync.py
+echo         body=body).execute()>> sheets_sync.py
