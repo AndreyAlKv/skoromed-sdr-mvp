@@ -5,7 +5,7 @@ from email.message import EmailMessage
 GMAIL_USER = "gfdnk1971@gmail.com"  # ASCII Gmail! ЗАМЕНИ НА СВОЙ (без кириллицы)
 GMAIL_PASS = "diwg wjwv ffvg oawv"  # App Password ASCII OK
 leads = json.load(open('src/data/all_leads.json', 'r', encoding='utf-8'))
-print(f"📧 Загружено {len(leads)} лидов")
+print("Mailer: Загружено лидов из CSV - OK")
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 server.login(GMAIL_USER, GMAIL_PASS)  # str ASCII OK

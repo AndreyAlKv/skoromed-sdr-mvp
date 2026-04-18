@@ -1,0 +1,6 @@
+inn,name,okved,region,moscow,fio,phones,emails,status
+test1,Test Cafe Москва,['56'],77,True,Иванов И.И.,['+74951234567'],['test@mail.ru'],Действующее
+test2,Test Salon Москва,['96'],77,True,Петрова А.А.,['+79161234567'],['salon@mail.ru'],Действующее
+test3,Test Fitness Москва,['93'],77,True,Сидоров В.В.,['+79533626602'],['fit@mail.ru'],Действующее
+test4,Test Магазин Москва,['47'],77,True,Козлова Е.Е.,['+74952129031'],['shop@mail.ru'],Действующее
+test5,Test Опт Москва,['46'],77,True,Федоров Д.Д.,['+74957810003'],['opt@mail.ru'],Действующее
