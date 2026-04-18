@@ -1158,3 +1158,2585 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pandas'
 [18.04.2026 15:08:11,80] DB OK (5+ B2B leads) 
 [18.04.2026 15:08:11,82] SDR v2.0 END 
+[18.04.2026 15:51:20,37] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[18.04.2026 15:51:20,43] FNS OK 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+[18.04.2026 15:51:20,51] 2GIS OK 
+[18.04.2026 15:51:20,58] VK OK 
+[18.04.2026 15:51:20,64] TG OK 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\mailer.py", line 2, in <module>
+    from email.mime.text import MimeText
+ImportError: cannot import name 'MimeText' from 'email.mime.text' (C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\email\mime\text.py)
+[18.04.2026 15:51:20,75] Mailer OK 
+[18.04.2026 15:51:20,76] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[18.04.2026 15:51:20,85] DB OK (5+ B2B leads) 
+[18.04.2026 15:51:20,87] SDR v2.0 END 
+[18.04.2026 17:00:01,55] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:00:02,09] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79175738991', '+79035378991', '8903719379']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 70, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+^C[18.04.2026 17:01:11,87] 2GIS OK 
+[18.04.2026 17:01:12,71] VK OK 
+[18.04.2026 17:01:12,77] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 17:01:25,87] Mailer OK 
+[18.04.2026 17:01:25,89] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 17:01:26,43] DB OK (5+ B2B leads) 
+[18.04.2026 17:01:26,45] SDR v2.0 END 
+[18.04.2026 17:05:09,76] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:05:10,25] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79175738991', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516955', '84959532010', '84959516901']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 17:06:33,92] 2GIS OK 
+[18.04.2026 17:06:34,73] VK OK 
+[18.04.2026 17:06:34,79] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 17:06:47,43] Mailer OK 
+[18.04.2026 17:06:47,44] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 2, in <module>
+    import pandas as pd
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\.venv_local\lib\site-packages\pandas\__init__.py", line 49, in <module>
+    from pandas._config import (
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\.venv_local\lib\site-packages\pandas\_config\__init__.py", line 20, in <module>
+    from pandas._config import config
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1002, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 945, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1439, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1411, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1572, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 96, in _path_join
+KeyboardInterrupt
+^C[18.04.2026 17:08:27,37] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:08:27,87] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '+79175738991', '8903719379']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+ERROR: HTTPSConnectionPool(host='medkomissiya.ru', port=443): Read timed out. (read timeout=10)
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+ERROR: HTTPSConnectionPool(host='medosmotry.ru', port=443): Read timed out. (read timeout=10)
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 70, in <module>
+    time.sleep(2)
+KeyboardInterrupt
+^C[18.04.2026 17:11:11,12] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:11:11,65] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '+79175738991', '8903719379']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+ERROR: HTTPSConnectionPool(host='medosmotry.ru', port=443): Read timed out. (read timeout=10)
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516901', '84959516955', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 17:12:36,46] 2GIS OK 
+[18.04.2026 17:12:37,26] VK OK 
+[18.04.2026 17:12:37,31] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 17:12:49,76] Mailer OK 
+[18.04.2026 17:12:49,78] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 17:12:50,30] DB OK (5+ B2B leads) 
+[18.04.2026 17:12:50,32] SDR v2.0 END 
+[18.04.2026 17:18:08,53] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:18:09,07] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '8903719379', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+74958888202', '+79253135151']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516901', '84959516955']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 17:19:31,85] 2GIS OK 
+[18.04.2026 17:19:32,63] VK OK 
+[18.04.2026 17:19:32,69] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 17:19:45,68] Mailer OK 
+[18.04.2026 17:19:45,69] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 17:19:46,24] DB OK (5+ B2B leads) 
+[18.04.2026 17:19:46,25] SDR v2.0 END 
+[18.04.2026 17:31:49,17] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 17:31:49,70] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79175738991', '8903719379', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+ERROR: HTTPSConnectionPool(host='medkomissiya.ru', port=443): Read timed out. (read timeout=10)
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+74958888202', '+79253135151']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516955', '84959516901']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 17:33:20,45] 2GIS OK 
+[18.04.2026 17:33:21,24] VK OK 
+[18.04.2026 17:33:21,30] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 17:33:33,94] Mailer OK 
+[18.04.2026 17:33:33,95] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 17:33:34,48] DB OK (5+ B2B leads) 
+[18.04.2026 17:33:34,50] SDR v2.0 END 
+[18.04.2026 18:25:01,38] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 18:25:02,51] FNS OK 
+[18.04.2026 19:03:07,21] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[18.04.2026 19:03:07,28] FNS OK 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+[18.04.2026 19:03:07,36] 2GIS OK 
+[18.04.2026 19:03:07,43] VK OK 
+[18.04.2026 19:03:07,49] TG OK 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\mailer.py", line 6, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[18.04.2026 19:03:07,63] Mailer OK 
+[18.04.2026 19:03:07,65] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 2, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+[18.04.2026 19:03:07,73] DB OK (5+ B2B leads) 
+[18.04.2026 19:03:07,75] SDR v2.0 END 
+[18.04.2026 19:46:50,45] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 19:46:50,94] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '8903719379', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+74958888202', '+79253135151']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516955', '84959516901']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 19:48:18,72] 2GIS OK 
+[18.04.2026 19:48:19,53] VK OK 
+[18.04.2026 19:48:19,58] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 19:48:32,10] Mailer OK 
+[18.04.2026 19:48:32,12] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 19:48:32,69] DB OK (5+ B2B leads) 
+[18.04.2026 19:48:32,71] SDR v2.0 END 
+[18.04.2026 20:35:57,10] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 20:35:57,61] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '8903719379', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+ERROR: HTTPSConnectionPool(host='medkomissiya.ru', port=443): Read timed out. (read timeout=10)
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516901', '84959516955']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 20:37:29,39] 2GIS OK 
+[18.04.2026 20:37:30,19] VK OK 
+[18.04.2026 20:37:30,25] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 20:37:43,82] Mailer OK 
+[18.04.2026 20:37:43,84] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 20:37:44,43] DB OK (5+ B2B leads) 
+[18.04.2026 20:37:44,44] SDR v2.0 END 
+[18.04.2026 20:47:32,25] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 20:47:32,76] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79035378991', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+ERROR: HTTPSConnectionPool(host='medosmotry.ru', port=443): Read timed out. (read timeout=10)
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516901', '84959516955']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 20:49:04,35] 2GIS OK 
+[18.04.2026 20:49:05,14] VK OK 
+[18.04.2026 20:49:05,20] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 20:49:18,37] Mailer OK 
+[18.04.2026 20:49:18,39] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 20:49:18,93] DB OK (5+ B2B leads) 
+[18.04.2026 20:49:18,94] SDR v2.0 END 
+[18.04.2026 21:15:05,67] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 21:15:06,16] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79035378991', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516955', '84959516901', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 21:16:27,21] 2GIS OK 
+[18.04.2026 21:16:28,01] VK OK 
+[18.04.2026 21:16:28,07] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 21:16:40,88] Mailer OK 
+[18.04.2026 21:16:40,90] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 21:16:41,42] DB OK (5+ B2B leads) 
+[18.04.2026 21:16:41,44] SDR v2.0 END 
+[18.04.2026 21:53:15,25] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 21:53:15,74] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79175738991', '8903719379', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+74958888202', '+79253135151']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516901', '84959516955']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 21:54:42,39] 2GIS OK 
+[18.04.2026 21:54:43,20] VK OK 
+[18.04.2026 21:54:43,26] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 21:54:56,24] Mailer OK 
+[18.04.2026 21:54:56,25] DB Sync START 
+Skip fns_cafe_moscow.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_moscow_cafe.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip egr_okved_leads.csv: 'str' object has no attribute 'astype'
+Skip enriched_leads.csv: 'str' object has no attribute 'astype'
+Skip fns_fallback_leads.csv: No columns to parse from file
+Skip fns_okved_moscow_leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv: 'str' object has no attribute 'astype'
+Skip leads.csv  # Или Excel leads.csv: No columns to parse from file
+Skip local_b2b_leads.csv: 'str' object has no attribute 'astype'
+Skip okved_test_leads.csv: No columns to parse from file
+Skip parsed_stage1_leads.csv: 'str' object has no attribute 'astype'
+Skip data\vk_opt_in_leads.csv: 'str' object has no attribute 'astype'
+TOTAL B2B leads: 25
+[18.04.2026 21:54:56,78] DB OK (5+ B2B leads) 
+[18.04.2026 21:54:56,79] SDR v2.0 END 
+[18.04.2026 22:34:46,93] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 22:34:47,54] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79175738991', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516901', '84959516955', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 22:36:19,03] 2GIS OK 
+[18.04.2026 22:36:19,94] VK OK 
+[18.04.2026 22:36:20,00] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 22:36:33,59] Mailer OK 
+[18.04.2026 22:36:33,61] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[18.04.2026 22:36:34,14] DB OK (5+ B2B leads) 
+[18.04.2026 22:36:34,16] SDR v2.0 END 
+[18.04.2026 23:17:37,42] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 23:17:37,92] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '8903719379', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516955', '84959516901', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 23:18:56,15] 2GIS OK 
+[18.04.2026 23:18:56,95] VK OK 
+[18.04.2026 23:18:57,01] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 23:19:10,03] Mailer OK 
+[18.04.2026 23:19:10,05] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[18.04.2026 23:19:10,68] DB OK (5+ B2B leads) 
+[18.04.2026 23:19:10,70] SDR v2.0 END 
+[18.04.2026 23:28:28,31] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 23:28:28,86] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79175738991', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959532010', '84959516901', '84959516955']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 23:29:58,83] 2GIS OK 
+[18.04.2026 23:29:59,64] VK OK 
+[18.04.2026 23:29:59,71] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 23:30:12,96] Mailer OK 
+[18.04.2026 23:30:12,98] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[18.04.2026 23:30:13,48] DB OK (5+ B2B leads) 
+[18.04.2026 23:30:13,50] SDR v2.0 END 
+[18.04.2026 23:31:42,50] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 23:31:42,99] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['8903719379', '+79035378991', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@medicina-365.ru', 'info@company24.com'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516901', '84959516955', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 23:33:04,41] 2GIS OK 
+[18.04.2026 23:33:05,26] VK OK 
+[18.04.2026 23:33:05,32] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 23:33:18,49] Mailer OK 
+[18.04.2026 23:33:18,50] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[18.04.2026 23:33:19,01] DB OK (5+ B2B leads) 
+[18.04.2026 23:33:19,03] SDR v2.0 END 
+[2026-04-18 23:50:06,101] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-18 23:50:06,102] Sync END: +0, total 0
+[18.04.2026 23:51:44,24] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[18.04.2026 23:51:44,75] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79035378991', '8903719379', '+79175738991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+ERROR: HTTPSConnectionPool(host='medkomissiya.ru', port=443): Read timed out. (read timeout=10)
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+ERROR: HTTPSConnectionPool(host='medosmotry.ru', port=443): Read timed out. (read timeout=10)
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['+74952129031', '84952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516955', '84959532010', '84959516901']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[18.04.2026 23:53:20,56] 2GIS OK 
+[18.04.2026 23:53:21,37] VK OK 
+[18.04.2026 23:53:21,42] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[18.04.2026 23:53:35,59] Mailer OK 
+[18.04.2026 23:53:35,61] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[18.04.2026 23:53:36,13] DB OK (5+ B2B leads) 
+[18.04.2026 23:53:36,14] SDR v2.0 END 
+[19.04.2026  0:03:12,98] SDR v2.0 START (.venv_local) 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\main.py", line 5, in <module>
+    print("\U0001f916 SDR Полный цикл Skoromed (Этапы 1-4)")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f916' in position 0: character maps to <undefined>
+[19.04.2026  0:03:13,48] FNS OK 
+Loaded 34 companies
+1/34 Медкнижка срочно Москва...
+URL: https://medspravki-moskva.ru/
+Status: 200
+SUCCESS emails: ['89037193794@mail.ru'] phones: ['+79175738991', '8903719379', '+79035378991']
+2/34 Медкнижка Москва быстро...
+URL: https://medknizhka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+3/34 Медкомиссия 24/7 Москва...
+URL: https://medkomissiya.ru/moskva
+Status: 403
+FAIL 403
+4/34 Санэпидемстанция Медкнижка МО...
+URL: https://ses-moskva.ru/medknizhka
+Status: 404
+FAIL 404
+5/34 Центр медосмотров Москва МО...
+URL: https://medosmotry.ru/moskva
+Status: 403
+FAIL 403
+6/34 Медсправка 24 Москва...
+URL: https://medspravka24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medspravka24.ru', port=443): Max retries exceeded with url: /moskva (Cause
+7/34 Медкнижка Москва дешево...
+URL: https://medknijka.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+79533626602']
+8/34 Медбук Москва...
+URL: https://medbook-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medbook-moskva.ru', port=443): Max retries exceeded with url: / (Caused by
+9/34 Санэпид Медкнижка Москва...
+URL: https://sanepid-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='sanepid-moskva.ru', port=443): Max retries exceeded with url: /medknizhka 
+10/34 Медкомплекс Медкнижка МО...
+URL: https://medkompleks.ru/moskva/medknizhka
+ERROR: HTTPSConnectionPool(host='medkompleks.ru', port=443): Max retries exceeded with url: /moskva/medkniz
+11/34 Медсправка Москва срочно...
+URL: https://medspravka-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+12/34 Медкнижка 24 Москва...
+URL: https://medknizhka-24.ru/moskva
+ERROR: HTTPSConnectionPool(host='medknizhka-24.ru', port=443): Max retries exceeded with url: /moskva (Caus
+13/34 Медосмотр Москва Водители...
+URL: https://medosmotry-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+14/34 СЭС Москва Медкнижка...
+URL: https://ses24-moskva.ru/medknizhka
+ERROR: HTTPSConnectionPool(host='ses24-moskva.ru', port=443): Max retries exceeded with url: /medknizhka (C
+15/34 Медкнижка Подмосковье...
+URL: https://medknizhka-mo.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-mo.ru', port=443): Max retries exceeded with url: / (Caused by 
+16/34 Медсправки Москва дешево...
+URL: https://medspravki24-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medspravki24-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+17/34 Медкомиссия Москва МО...
+URL: https://medkomissiya-moskva.ru/
+ERROR: HTTPSConnectionPool(host='medkomissiya-moskva.ru', port=443): Max retries exceeded with url: / (Caus
+18/34 Санминимум Москва срочно...
+URL: https://sanminimum-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanminimum-moskva.ru', port=443): Max retries exceeded with url: / (Caused
+19/34 Медкнижка МСК срочно...
+URL: https://medknizhka-msk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-msk.ru', port=443): Max retries exceeded with url: / (Caused by
+20/34 Медсправка Москва 24...
+URL: https://medspravka-m.ru/
+ERROR: HTTPSConnectionPool(host='medspravka-m.ru', port=443): Max retries exceeded with url: / (Caused by N
+21/34 Медосмотр МО дешево...
+URL: https://medosmor-mo.ru/
+ERROR: HTTPSConnectionPool(host='medosmor-mo.ru', port=443): Max retries exceeded with url: / (Caused by Na
+22/34 Санминимум Москва...
+URL: https://sanmin-moskva.ru/
+ERROR: HTTPSConnectionPool(host='sanmin-moskva.ru', port=443): Max retries exceeded with url: / (Caused by 
+23/34 Медкнижка Химки МО...
+URL: https://medknizhka-himki.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-himki.ru', port=443): Max retries exceeded with url: / (Caused 
+24/34 Медкомиссия Одинцово...
+URL: https://medkom-odincovo.ru/
+ERROR: HTTPSConnectionPool(host='medkom-odincovo.ru', port=443): Max retries exceeded with url: / (Caused b
+25/34 Медсправки Люберцы МО...
+URL: https://medspravki-lyubertsy.ru/
+ERROR: HTTPSConnectionPool(host='medspravki-lyubertsy.ru', port=443): Max retries exceeded with url: / (Cau
+26/34 СЭС Подмосковье Москва...
+URL: https://ses-mo-msk.ru/
+ERROR: HTTPSConnectionPool(host='ses-mo-msk.ru', port=443): Max retries exceeded with url: / (Caused by Nam
+27/34 Медкнижка Красногорск...
+URL: https://medknizhka-krasnogorsk.ru/
+ERROR: HTTPSConnectionPool(host='medknizhka-krasnogorsk.ru', port=443): Max retries exceeded with url: / (C
+28/34 Медосмотры Королев МО...
+URL: https://medosmotry-korolev.ru/
+ERROR: HTTPSConnectionPool(host='medosmotry-korolev.ru', port=443): Max retries exceeded with url: / (Cause
+29/34 NV Medica Медкнижка Москва...
+URL: https://nv-medica.ru/services/uslugi/meditsinskie-knizhki/
+Status: 200
+SUCCESS emails: ['office@nv-medica.ru'] phones: ['+74951501656']
+30/34 Medcentr Sitimed Медкнижка...
+URL: https://medcentr-sitimed.ru/medknizhki/poluchenie-medknizhki/
+Status: 200
+SUCCESS emails: ['info@medcentr-sitimed.ru'] phones: ['84952129031', '+74952129031']
+31/34 Mobil-Med Медкнижки Москва...
+URL: https://www.mobil-med.org/medknizhki/
+Status: 200
+SUCCESS emails: ['info@mobil-med.org'] phones: ['+74957810003']
+32/34 Medosmotry 365 Москва...
+URL: https://medosmotry-365.ru/#b23969
+Status: 200
+SUCCESS emails: ['info@company24.com', 'info@medicina-365.ru'] phones: ['+79253135151', '+74958888202']
+33/34 OrisFirm Медосмотры МО...
+URL: https://orisfirm.ru/
+Status: 200
+SUCCESS emails: [] phones: ['+74952287788']
+34/34 Erisman Медкнижка Москва...
+URL: https://www.erisman.ru/
+Status: 200
+SUCCESS emails: ['info@erisman.ru'] phones: ['84959516901', '84959516955', '84959532010']
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\enrich.py", line 74, in <module>
+    print("\u2705 Saved enriched_companies.json")
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\encodings\cp1251.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+[19.04.2026  0:04:34,78] 2GIS OK 
+[19.04.2026  0:04:35,57] VK OK 
+[19.04.2026  0:04:35,63] TG OK 
+GMAIL_USER: gfdnk1971@gmail.com
+GMAIL_PASS len: 16 chars
+вњ… Gmail LOGIN OK!
+Loading 3 leads...
+вњ… Sent to test@mail.ru
+вњ… Sent to salon@mail.ru
+вњ… Sent to fit@mail.ru
+Mailer ROI: Sent 3/3 OK
+[19.04.2026  0:04:49,34] Mailer OK 
+[19.04.2026  0:04:49,35] DB Sync START 
+Traceback (most recent call last):
+  File "C:\Users\gfdnk\Documents\https-github.com-Skoromed-ai-sdr-prototype\src\db_sync.py", line 6, in <module>
+    logging.basicConfig(filename='logs/full_cycle.log', level=logging.INFO, format='[%(asctime)s] %(message)s', encoding='utf-8')
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 2040, in basicConfig
+    h = FileHandler(filename, mode,
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1169, in __init__
+    StreamHandler.__init__(self, self._open())
+  File "C:\Users\gfdnk\AppData\Local\Programs\Python\Python310\lib\logging\__init__.py", line 1201, in _open
+    return open_func(self.baseFilename, self.mode,
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\https-github.com-Skoromed-ai-sdr-prototype\\logs\\full_cycle.log'
+[19.04.2026  0:04:49,88] DB OK (5+ B2B leads) 
+[19.04.2026  0:04:49,89] SDR v2.0 END 
+[2026-04-19 00:06:28,638] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:06:28,639] Sync END: +0, total 0
+[2026-04-19 00:07:29,649] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:07:29,649] Sync END: +0, total 0
+[2026-04-19 00:15:46,248] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:15:46,249] Sync END: +0, total 0

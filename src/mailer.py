@@ -1,30 +1,58 @@
-# src/mailer.py - SMTP LOGIN ASCII FIX (Python 3.14)
+import sys
 import smtplib
-import json
-from email.message import EmailMessage
-GMAIL_USER = "gfdnk1971@gmail.com"  # ASCII Gmail! ЗАМЕНИ НА СВОЙ (без кириллицы)
-GMAIL_PASS = "diwg wjwv ffvg oawv"  # App Password ASCII OK
-leads = json.load(open('src/data/all_leads.json', 'r', encoding='utf-8'))
-print("Mailer: Загружено лидов из CSV - OK")
-server = smtplib.SMTP('smtp.gmail.com', 587)
-server.starttls()
-server.login(GMAIL_USER, GMAIL_PASS)  # str ASCII OK
-sent = 0
-for lead in leads[:24]:
-    name = lead.get('name', 'клиника')
-    email = lead.get('email') or f"info@{name.lower().replace(' ', '').replace('/', '').replace('.', '').replace('-', '')}.ru"
-    
-    msg = EmailMessage()
-    msg['Subject'] = f"Медосмотры для {name}: скидка 25%!"
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+import sqlite3
+import pandas as pd
+import time
+import ast
+sys.stdout.reconfigure(encoding='utf-8')
+GMAIL_USER = "gfdnk1971@gmail.com"  # Твой Gmail!
+GMAIL_PASS = "jssmipdwevomxxty"  # Новый PASS вставлен!
+print(f"GMAIL_USER: {GMAIL_USER}")
+print(f"GMAIL_PASS len: {len(GMAIL_PASS)} chars")
+# Test login
+try:
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(GMAIL_USER, GMAIL_PASS)
+    server.quit()
+    print("✅ Gmail LOGIN OK!")
+except Exception as e:
+    print(f"❌ LOGIN ERROR: {e}")
+    exit()
+def send_email(to_email, name, phone):
+    msg = MIMEMultipart()
     msg['From'] = GMAIL_USER
-    msg['To'] = email
-    msg.set_content(f"Привет, {name}! Скидка 25% медосмотры. +7(495)212-12-12 https://2121212.ru/akcii")
+    msg['To'] = to_email
+    msg['Subject'] = "Dogovor medknizhka SDR v2.0"
+    body = f"Здравствуйте, {name}! SKOROMED medosmotry. Tel: +7(495)123-45-67 /optin {phone}"
+    msg.attach(MIMEText(body, 'plain', 'utf-8'))
     
     try:
+        server = smtplib.SMTP('smtp.gmail.com', 587)
+        server.starttls()
+        server.login(GMAIL_USER, GMAIL_PASS)
         server.send_message(msg)
-        print(f"✅ {name} → {email}")
-        sent += 1
+        server.quit()
+        print(f"✅ Sent to {to_email}")
+        return True
     except Exception as e:
-        print(f"❌ {e}")
-server.quit()
-print(f"🚀 {sent}/24 отправлено! Gmail 'Отправленные'.")
+        print(f"❌ Send error {to_email}: {str(e)[:80]}")
+        return False
+conn = sqlite3.connect('db/skoromed_v2.db')
+df = pd.read_sql("SELECT fio as name, phones, emails FROM b2b_leads WHERE emails != '[]' LIMIT 3;", conn)
+conn.close()
+print(f"Loading {len(df)} leads...")
+sent = 0
+for _, row in df.iterrows():
+    try:
+        phones = ast.literal_eval(row['phones'])[0] if row['phones'] else 'no_phone'
+        emails = ast.literal_eval(row['emails'])[0] if row['emails'] else None
+        if emails:
+            if send_email(emails, row['name'], phones):
+                sent += 1
+    except:
+        pass
+    time.sleep(3)
+print(f"Mailer ROI: Sent {sent}/{len(df)} OK")

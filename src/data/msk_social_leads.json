@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Салон красоты Люберцы Beauty",
+    "phones": [
+      "+7(495) 123-45-67"
+    ],
+    "website": "beauty-lyub.ru",
+    "social": [
+      "vk.com/beautylyub",
+      "instagram.com/beautylyub"
+    ],
+    "rating": 4.6,
+    "query": "салон красоты Люберцы",
+    "date": "13.04 18:28"
+  },
+  {
+    "name": "Кафе Химки Уют",
+    "phones": [
+      "+7(916) 789-01-23"
+    ],
+    "website": "cafe-uyut-himki.ru",
+    "social": [
+      "vk.com/cafeuyut",
+      "t.me/himkicafe"
+    ],
+    "rating": 4.4,
+    "query": "кафе Химки",
+    "date": "13.04 18:28"
+  },
+  {
+    "name": "Автосервис Одинцово Профи",
+    "phones": [
+      "+7(498) 567-89-01"
+    ],
+    "website": "profi-auto-odintsovo.ru",
+    "social": [
+      "vk.com/profi_auto"
+    ],
+    "rating": 4.2,
+    "query": "автосервис Одинцово",
+    "date": "13.04 18:28"
+  }
+  {
+     "name": "Салон Красаново Росс",
+     "phones": ["найди в группе"],
+     "website": "",
+     "social": ["vk.com/krasanovoross"],
+     "rating": 4.5,
+     "query": "салон красоты",
+     "date": "13.04 19:00"
+   }
+]

@@ -1,25 +1,31 @@
-# Sensitive (секреты)
-.env
-# Data (файлы лидов)
-data/
-data/*.csv
-# Logs (результаты)
-results.*
-*.txt
-# XML (задачи)
-*.xml
-# Junk (мусор)
-README.php
-# Python (кэш)
+# venv/virtualenv
+.venv_local/
+venv/
+env/
+# DB/logs (optional, test data)
+db/
+logs/
+# pyc/compiled
 __pycache__/
 *.pyc
- service_account.json 
-*.json 
-logs/ 
-data/ 
-db/*.db 
-service_account.json 
-*.json   # All JSON secrets
-logs/ 
-data/ 
-db/*.db 
+*.pyo
+*.pyd
+# IDE
+.vscode/
+.idea/
+# OS
+.DS_Store
+Thumbs.db
+# Data (CSV test)
+*.csv
+data/*.csv
+# Sensitive/credentials
+.env
+service_account.json
+*.xml
+# Results/test
+results.txt
+templates.txt
+README.php
+# Data JSON (test leads)
+src/data/*.json
