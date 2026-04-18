@@ -3744,3 +3744,7 @@ PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\htt
 [2026-04-19 00:25:09,190] Sync END: +0, total 0
 [2026-04-19 00:26:32,341] Skip data\vk_opt_in_leads.csv: no inn
 [2026-04-19 00:26:32,342] Sync END: +0, total 0
+[2026-04-19 00:34:58,406] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:34:58,406] Sync END: +0, total 0
+[2026-04-19 00:36:04,540] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:36:04,541] Sync END: +0, total 0
