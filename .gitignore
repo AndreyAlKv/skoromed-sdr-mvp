@@ -100,3 +100,6 @@ env/
 pip-wheel-metadata/
 __pycache__/
 *.pyc
+# Secrets/API
+service_account.json
+*.json (secrets)

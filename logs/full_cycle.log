@@ -3758,3 +3758,9 @@ PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\htt
 [2026-04-19 00:59:33,601] Added 5 unique Moscow from data\fns_apteki_test.csv
 [2026-04-19 00:59:33,603] Skip data\vk_opt_in_leads.csv: no inn
 [2026-04-19 00:59:33,603] Sync END: +5, total 5
+[2026-04-19 01:40:01,873] Error data\fns_apteki_test.csv: [WinError 183] Невозможно создать файл, так как он уже существует: 'data\\fns_apteki_test.csv' -> 'data/archives/fns_apteki_test.csv'
+[2026-04-19 01:40:01,875] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 01:40:01,876] Sync END: +0, total 5
+[2026-04-19 02:15:35,634] Sync END: +0, total 5
+[2026-04-19 02:16:12,892] Sync END: +160, total 165
+[2026-04-19 02:36:48,387] Sync END: +0, total 165
