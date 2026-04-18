@@ -13,4 +13,8 @@ README.php
 # Python (кэш)
 __pycache__/
 *.pyc
- 
+ service_account.json 
+*.json 
+logs/ 
+data/ 
+db/*.db 
