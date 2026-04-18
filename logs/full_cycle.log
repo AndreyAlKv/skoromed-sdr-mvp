@@ -3748,3 +3748,13 @@ PermissionError: [Errno 13] Permission denied: 'C:\\Users\\gfdnk\\Documents\\htt
 [2026-04-19 00:34:58,406] Sync END: +0, total 0
 [2026-04-19 00:36:04,540] Skip data\vk_opt_in_leads.csv: no inn
 [2026-04-19 00:36:04,541] Sync END: +0, total 0
+[2026-04-19 00:44:20,646] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:44:20,647] Sync END: +0, total 0
+[2026-04-19 00:50:26,050] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:50:26,051] Sync END: +0, total 0
+[2026-04-19 00:54:16,383] Skip data\fns_apteki_test.csv: no inn
+[2026-04-19 00:54:16,384] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:54:16,384] Sync END: +0, total 0
+[2026-04-19 00:59:33,601] Added 5 unique Moscow from data\fns_apteki_test.csv
+[2026-04-19 00:59:33,603] Skip data\vk_opt_in_leads.csv: no inn
+[2026-04-19 00:59:33,603] Sync END: +5, total 5
