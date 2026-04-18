@@ -18,3 +18,8 @@ __pycache__/
 logs/ 
 data/ 
 db/*.db 
+service_account.json 
+*.json   # All JSON secrets
+logs/ 
+data/ 
+db/*.db 
