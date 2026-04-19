@@ -1,5 +1,5 @@
 
-SDR RESULTS SUMMARY v2.2.7 (DB: data/sdr.db size 40.0 KB)
+SDR RESULTS SUMMARY v2.2.8 (DB: data/sdr.db size 40.0 KB)
 ================================================================================
 TOTAL leads: 165
 Non-test qualified: 165 (OKVED 47/56/96/93 Москва)
@@ -13,14 +13,14 @@ okved
 Top region:
 region
 77    165
-Preview first 5:
-     inn              name okved  region  moscow      fio      phones                                       emails      status  timestamp
-77000000 магазин Москва #1  47.0      77       1 Директор 74951234567 ['info@{query.lower().replace(" ", "")}.ru'] Действующее 2026-04-19
-77000001 магазин Москва #2  47.0      77       1 Директор 74951234567 ['info@{query.lower().replace(" ", "")}.ru'] Действующее 2026-04-19
-77000002 магазин Москва #3  47.0      77       1 Директор 74951234567 ['info@{query.lower().replace(" ", "")}.ru'] Действующее 2026-04-19
-77000003 магазин Москва #4  47.0      77       1 Директор 74951234567 ['info@{query.lower().replace(" ", "")}.ru'] Действующее 2026-04-19
-77000004 магазин Москва #5  47.0      77       1 Директор 74951234567 ['info@{query.lower().replace(" ", "")}.ru'] Действующее 2026-04-19
-CSV export: data/results_export.csv (165 rows)
+Preview first 5 CLEAN:
+     inn              name okved      phones                                       emails
+77000000 магазин Москва #1  47.0 74951234567 ['info@{query.lower().replace(" ", "")}.ru']
+77000001 магазин Москва #2  47.0 74951234567 ['info@{query.lower().replace(" ", "")}.ru']
+77000002 магазин Москва #3  47.0 74951234567 ['info@{query.lower().replace(" ", "")}.ru']
+77000003 магазин Москва #4  47.0 74951234567 ['info@{query.lower().replace(" ", "")}.ru']
+77000004 магазин Москва #5  47.0 74951234567 ['info@{query.lower().replace(" ", "")}.ru']
+CSV export: data/results_export.csv (165 rows CLEAN phones/emails)
 Archives: data/archives/*.csv
 JSON enrich: data/enriched_companies.json
 Logs: logs/full_cycle.log
